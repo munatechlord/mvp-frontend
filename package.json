@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Cornerstock",
   "main": "server/index.js",
-  "homepage": "tumo505.github.io/mvp-frontend",
+  "homepage": "http://tumo505.github.io/mvp-frontend",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
