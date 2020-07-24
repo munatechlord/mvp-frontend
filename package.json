@@ -1,9 +1,12 @@
 {
-  "name": "mern-ecommerce",
+  "name": "cornerstock",
   "version": "1.0.0",
-  "description": "MERN Ecommerce",
+  "description": "Cornerstock",
   "main": "server/index.js",
+  "homepage": "https://cornerstock-app.github.io/server",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "npm run build:clean && cross-env NODE_ENV=production webpack --progress --colors",
     "build:clean": "rimraf ./dist",
     "start": "cross-env NODE_ENV=development nodemon server",
@@ -11,10 +14,6 @@
     "production": "npm run build",
     "postinstall": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mohamedsamara/mern-ecommerce.git"
   },
   "keywords": [
     "node",
@@ -25,12 +24,6 @@
     "redux-thunk",
     "webpack"
   ],
-  "author": "Mohamed Samara (https://github.com/mohamedsamara)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mohamedsamara/mern-ecommerce/issues"
-  },
-  "homepage": "https://github.com/mohamedsamara/mern-ecommerce#readme",
   "dependencies": {
     "axios": "^0.19.0",
     "bcryptjs": "^2.4.3",
@@ -83,6 +76,7 @@
     "cssnano": "^4.1.10",
     "dotenv-webpack": "^1.8.0",
     "file-loader": "^4.0.0",
+    "gh-pages": "^3.1.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.7.0",
     "node-sass": "^4.12.0",
