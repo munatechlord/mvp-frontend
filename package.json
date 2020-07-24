@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Cornerstock",
   "main": "server/index.js",
-  "homepage": "https://cornerstock-app.github.io/server",
+  "homepage": "https://munatechlord.github.io/server",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
